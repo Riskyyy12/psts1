@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Student Creativity Festival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-900 font-sans p-4 relative flex flex-col items-center justify-start overflow-y-auto">
+    
+    <!-- Background Video (Tetap di belakang dengan z-0) -->
+    <video class="fixed inset-0 h-full w-full object-cover z-0" autoplay muted loop playsinline>
+        <source src="black-cat-blue-sky-moewalls-com.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <!-- Konten Utama (Diberi z-20 agar berada di paling depan) -->
+    <div class="relative z-20 w-full flex flex-col items-center space-y-8 my-auto">
+        
+        <!-- Form Pendaftaran -->
+        <div class="w-full max-w-md bg-gradient-to-t from-blue-600 to-blue-400 rounded-2xl shadow-2xl p-6">
+            <div class="text-center text-gray-200 space-y-2">
+                <h2 class="text-xl font-bold tracking-wide">Student Creativity Festival</h2>
+            </div>
+
+            <hr class="border-indigo-900/60 my-4"/>
+
+            <div class="text-left text-white">
+                <h3 class="text-xs font-bold tracking-wider text-indigo-100 mb-4 uppercase">Send a Message</h3>
+                
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-xs font-medium mb-1">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" class="w-full px-3 py-2 text-sm bg-[#121235] text-white rounded border border-indigo-900/80 focus:outline-none focus:border-indigo-500 placeholder-indigo-400" required/>
+                    </div>
+                    
+                    <div>
+                        <label for="classroom" class="block text-xs font-medium mb-1">Classroom</label>
+                        <select id="classroom" name="classroom" class="w-full px-3 py-2 text-sm bg-[#121235] text-white rounded border border-indigo-900/80 focus:outline-none focus:border-indigo-500 text-indigo-200" required>
+                            <option value="">Select Classroom</option>
+                            <option value="X">X</option>
+                            <option value="XI">XI</option>
+                            <option value="XII">XII</option>
+                        </select>
+                    </div>
+
+                   <div>
+                <label for="Gender">Gender</label><br>
+             <input type="radio" id="css" name="fav_language" value="CSS">
+             <label for="css">Male</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">Female</label>                      
+             </div>
+
+                    <div>
+                        <label for="competition" class="block text-xs font-medium mb-1">Competition Category</label>
+                        <select id="competition" name="competition category" class="w-full px-3 py-2 text-sm bg-[#121235] text-white rounded border border-indigo-900/80 focus:outline-none focus:border-indigo-500 text-indigo-200" required>
+                            <option value="">Select Competition Category</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="IoT Project">IoT Project</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Public Speaking">Public Speaking</option>
+                            <option value="Photography">Photography</option>
+                        </select>
+                    </div>
+
+                   <div>
+                <label for="Participant Team">Participant Team</label><br>
+             <input type="radio" id="css" name="fav_language" value="CSS">
+             <label for="css">Individual</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">Team</label>                      
+             </div>
+
+                    <div>
+                        <label for="team_name" class="block text-xs font-medium mb-1">Team Name</label>
+                        <input type="text" id="team_name" placeholder="Your Team Name" class="w-full px-3 py-2 text-sm bg-[#121235] text-white rounded border border-indigo-900/80 focus:outline-none focus:border-indigo-500 placeholder-indigo-400" required/>
+                    </div>
+
+                    <div>
+                        <label for="contact" class="block text-xs font-medium mb-1">Contact Number</label>
+                        <input type="text" id="contact" placeholder="Your Number" class="w-full px-3 py-2 text-sm bg-[#121235] text-white rounded border border-indigo-900/80 focus:outline-none focus:border-indigo-500 placeholder-indigo-400" required/>
+                    </div>
+
+                    <div>
+                        <label for="description" class="block text-xs font-medium mb-1">Project Description</label>
+                        <textarea type="message" placeholder="Describe your project or competition entry" class="w-full px-3 py-8 text-sm bg-blue-500 text-white rounded border border-white"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full animate-pulse mt-2 px-4 py-2.5 bg-blue-500 hover:bg-blue-600 text-sm text-white font-semibold rounded-md border border-blue-700 transition-colors shadow-lg block text-center">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+       
+        <!-- Tabel Jadwal -->
+       <div class=" z-20 bg-gradient-to-t from-blue-400 to-blue-700 rounded max-w-xl mt-10 p-4 shadow text-black mx-auto text-blue-800">
+       
+    <table class="border border-red-800 mx-auto rounded table-auto text-center" >
+        <tr class="border border-red-800">
+            <th class="p-4 border border-red-800">No</th>
+            <th class="p-4 border border-red-800">Participan</th>
+            <th class="p-4 border border-red-800">Class</th>
+            <th class="p-4 border border-red-800">Category</th>
+            <th class="p-4 border border-red-800">Team</th>
+            <th class="p-4 border border-red-800">Status</th>
+        </tr>
+        <tr class="border border-red-800">
+            <th class="p-4 border border-red-800">1</th>
+            <th class="p-4 border border-red-800">Ibnu</th>
+            <th class="p-4 border border-red-800">X</th>
+            <th class="p-4 border border-red-800">Programing</th>
+            <th class="p-4 border border-red-800">Sandz</th>
+            <th class="p-4 border border-red-800">Pedding</th>
+        </tr>
+        <tr class="border border-red-800">
+            <th class="p-4 border border-red-800">2</th>
+            <th class="p-4 border border-red-800">Risky</th>
+            <th class="p-4 border border-red-800">X</th>
+            <th class="p-4 border border-red-800">Web Devlopment</th>
+            <th class="p-4 border border-red-800">Ucup Jasuke</th>
+            <th class="p-4 border border-red-800">Pedding</th>
+        </tr>
+     </table>
+     </div>
